@@ -1,1 +1,145 @@
-"hello splice"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://6.869.csail.mit.edu/fa19/schedule.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLX2Z5QLG8"></script>-->
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-WLX2Z5QLG8');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Splicing ViT Features for Semantic Appearance Transfer</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+
+  <meta name="description" content="Project page for &#39;Splicing ViT Features for Semantic Appearance Transfer.&#39;">
+  <link rel="icon" href="./pics/wis_logo.jpg">
+</head>
+	
+<body>
+  <p class="title">Splicing ViT Features for Semantic Appearance Transfer</p>
+<p class="author">
+    <span class="author"><a target="_blank" href="https://www.linkedin.com/in/shir-amir-859537138">Narek Tumanyan</a>&nbsp;<sup>*</sup></span>
+    <span class="author"><a target="_blank" href="https://yossigandelsman.github.io/">Omer Bar-Tal&nbsp;</a><sup>*</sup></span>
+	<span class="author"><a target="_blank" href="https://www.weizmann.ac.il/math/bagon/home">Shai Bagon</a>&nbsp;<sup>&nbsp;</sup></span>
+    <span class="author"><a target="_blank" href="https://www.weizmann.ac.il/math/dekel/">Tali Dekel</a>&nbsp;<sup>&nbsp;</sup></span>
+  </p>
+  <table border="0" align="center" class="affiliations" width="1200px">
+      <tbody align="center">
+    <tr>
+        <td style="text-align: right; width: 17%"><img src="./pics/wis_logo.jpg" height="48" alt=""></td>
+        <td style="text-align: left; width:20%; ">&nbsp;<sup>&nbsp;</sup>&nbsp;<a href="https://www.weizmann.ac.il/pages/">Weizmann Institute of Science</a></td>
+    </tr>
+          <tr>
+        <td style="text-align: right; width: 17%">*Equal contribution.</td>
+    </tr>
+    </tbody></table>
+    <table width="999" border="0" align="center" class="menu">
+      <tbody>
+        <tr>
+          <td align="center">| <a href="#paper">Paper</a> | <a href="#sm">Supplementary Material</a> | <a href="#code">Code</a> |</td>
+        </tr>
+      </tbody>
+    </table>
+<div class="container">
+      <table width="1000" border="0" align="center">
+        <tbody>
+			<tr>&nbsp; </tr>
+			<tr><img src="pics/teaser.png" alt="" width="1000" height="300" />&nbsp; </tr>
+			<!--tr align="center"><img src="./pics/teaser.png" width="1000"></tr-->
+		  <tr align="center"></tr>			
+			<tr>&nbsp; </tr>
+        </tbody></table>
+		
+          <p><span class="section"><b>Abstract</b></span> </p>
+          <p> We present a method for semantically transferring the visual appearance of one natural image to another. Specifically, our goal is to generate an image in which objects in a source structure image are "painted" with the visual appearance of their semantically related objects in a target appearance image. Our method works by training a generator given only a single structure/appearance image pair as input. To integrate semantic information into our framework - a pivotal component in tackling this task - our key idea is to leverage a pre-trained and fixed Vision Transformer (ViT) model which serves as an external semantic prior. Specifically, we derive novel representations of structure and appearance extracted from deep ViT features, untwisting them from the learned self-attention modules. We then establish an objective function that splices the desired structure and appearance representations, interweaving them together in the space of ViT features. Our framework does not involve adversarial training, nor does it require any additional input information such as semantic segmentation or correspondences, and can generate high resolution results, e.g., work in HD. We demonstrate high quality results on a variety of in-the-wild image pairs, under significant variations in the number of objects, their pose and appearance.&nbsp; </p>
+		
+  <p class="section">&nbsp;</p>
+<p class="section"><b>Semantic Appearance Transfer Results</b></p>
+<table align="center" width="940" border="0">
+  <tbody>
+    <tr>
+      <td><p>Our model successfully manages to tranfer the appearance from the inputted appearance image to the inputted structure image in a semantically meaningful manner.</p></td>
+    </tr>
+    <tr>
+      <td><img src="pics/results.png" alt="" width="1050" height="696" /></td>
+    </tr>
+  </tbody>
+</table>
+<p class="section">&nbsp;</p>
+<p class="section" id="paper"><b>Paper</b></p>
+          <table width="940" border="0">
+            <tbody>
+              <tr>
+                <td height="100"><a href="paper.pdf" target="_blank" rel="noopener noreferrer"><img src="./pics/paper_illustration.png" alt="" width="140" height="167"></a></td>
+                <td width="750"><p><b>Splicing ViT Features for Semantic Appearance Transfer</b><br>
+                  Narek Tumanyan <sup>*</sup>, Omer Bar-Tal <sup>*</sup>, Shai Bagon, Tali Dekel.<br />
+                  (* indicates equal contribution)                  <br>
+                  <em>Arxiv. 2021.</em><br><br>
+                  [<a href="http://arxiv.org/abs/2112.05814" target="_blank" rel="noopener noreferrer">paper</a>]</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="section">&nbsp;</p>
+          <p class="section" id="sm"><b>Supplementary Material</b></p>
+          <table width="587" height="136" border="0">
+            <tbody>
+              <tr>
+                <td width="250"><img src="./pics/sm_illustration.png" alt="" height="150"></td>
+                <td align="left">
+                  <p>[<a href="./sm/index.html">supplementary page</a>]</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="section">&nbsp;</p>
+          <p class="section" id="code"><b>Code</b></p>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td width="80"><img src="./pics/github_logo.png" alt="" height="50"></td>
+                <td align="left">
+                  <p>(coming soon)</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+	      <p class="section">&nbsp;</p>          
+
+          <p class="section" id="bibtex"><b>Bibtex</b></p>
+          <table border="0">
+            <tbody>
+              <pre style=" display: block;
+  background: #eee;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  min-width: 100px;
+  border-radius: 20px;
+  padding: 0;;">	
+  @article{amir2021deep,
+	  author    = {Shir Amir and Yossi Gandelsman and Shai Bagon and Tali Dekel},
+  	  title     = {Deep ViT Features as Dense Visual Descriptors}, 
+	  journal   = {arXiv preprint arXiv:2112.05814},
+	  year      = {2021},
+  }
+			  </pre>
+				
+		
+            </tbody>
+          </table>
+	
+	      <p class="section">&nbsp;</p>          
+          <p>&nbsp;</p>
+  <p><b>Acknowledgments</b></p>
+	<p>We thank <a href="http://people.csail.mit.edu/mrub/">Miki Rubinstein</a>, <a href="https://www.weizmann.ac.il/math/meirav/">Meirav Galun</a>, <a href="https://nivha.github.io/">Niv Haim</a> and <a href="https://kfiraberman.github.io/"> Kfir Aberman</a> for their useful comments. </p>
+</div>
+
+
+      
+</body>
+</html>
