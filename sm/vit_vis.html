@@ -1,0 +1,128 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Splicing ViT Features for Semantic Appearance Transfer: Supplementary Material</title>
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<button style="position: fixed;right: 50px;top:  50%;height: 100px;width: 140px; font-size: 20px;" type="button"><a href="#top">Back to top</a></button>
+<div class="container">
+    <h1 name="top" align="center">Splicing ViT Features for Semantic Appearance Transfer</h1>
+<h2 align="center">Supplementary Material</h2>
+
+  <p align="center">&nbsp;</p>
+
+  <table width="1200" border="0">
+  <tbody>
+
+    <tr>
+      <td align="left"> <h1 name="top" id="inversions" align="center">ViT Features Visualization</h1></td>
+    </tr>
+    <tr>
+      <td align="left"><p>We show feature inversion and PCA self-similarity visualizations for supervised ViT [8] on the same examples included in the paper (Fig. 3-5) for DINO-ViT [4]. As can be seen, the features contain detailed information of the input image, however the singal is noisier in supervised ViT compared to DINO-ViT, as  discussed in Sec.3.1.</p>
+      <p>&nbsp;</p></td>
+    </tr>
+    <tr>
+		<td align="left"><h2 align="left">Supervised ViT Features Visualization </h2></td>
+    </tr>
+    <tr>
+      <td align="left"><table align="center">
+        <tbody>
+          <tr>
+            <th colspan="4"><span class="label">Input Images</span></th>
+            </tr>
+          <tr>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/lime/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/zebra/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/landscape_2/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/duck/img.jpg" /></th>
+          </tr>
+          <tr>
+            <th colspan="4"><span class="label">Key Inversions (layer 11)</span></th>
+            </tr>
+          <tr>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/lime/keys/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/zebra/keys/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/landscape_2/keys/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/duck/keys/img.jpg" /></th>
+          </tr>
+          <tr>
+            <th colspan="4"><span class="label">PCA of keys’ self-similarity (3 leading components, layer 11)</span></th>
+            </tr>
+          <tr>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/lime/keys_self_sim/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/zebra/keys_self_sim/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/landscape_2/keys_self_sim/img.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/duck/keys_self_sim/img.jpg" /></th>
+          </tr>
+          <tr>
+            <th colspan="4"><span class="label">[CLS] token inversions (layer 11)</span></th>
+            </tr>
+          <tr>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/lime/layer_11/media_images_result_220_11858c92.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/zebra/layer_11/media_images_result_220_3c30f417.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/landscape_2/layer_11/media_images_result_220_22a8d0b5.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/supervised/duck/layer_11/media_images_result_220_9d4c809b.jpg" /></th>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+    <tr>
+      <td align="left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="left"><h2> DINO-ViT Feature Inversion w/o Image Prior </h2> </td>
+    </tr>
+    <tr>
+      <td align="left"><p>As discussed in Sec. 3.2, feature inversion w/o any regularization, i.e., optimizing directly the image pixels, is insufficient for converging into a meaningful result.
+</p>
+      <p>&nbsp; </p></td>
+    </tr>
+    <tr>
+      <td align="left"> </td>
+    </tr>
+    <tr>
+      <td align="left"><table align="center">
+        <tbody>
+          <tr>
+            <th colspan="4"><span class="label">Key Inversions (layer 11), w/o Deep Image Prior (DIP)</span></th>
+          </tr>
+          <tr>
+            <th><img height="224" src="./assets/vit_inversions/inversions/self_supervised/lime/media_images_result_10_dbcd4d82.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/self_supervised/zebra/media_images_result_10_c32642ae.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/self_supervised/landscape_2/media_images_result_10_8659431f.jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/self_supervised/duck/media_images_result_10_40509323.jpg" /></th>
+          </tr>
+          <tr>
+            <th colspan="4"><span class="label">[CLS] Token Inversions (layer 11), w/o DIP</span></th>
+          </tr>
+          <tr>
+            <th><img height="224" src="./assets/vit_inversions/inversions/self_supervised/lime/media_images_result_10_c421d8ea (1).jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/self_supervised/zebra/media_images_result_10_1d27781e (1).jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/self_supervised/landscape_2/media_images_result_10_46d61c0a (1).jpg" /></th>
+            <th><img height="224" src="./assets/vit_inversions/inversions/self_supervised/duck/media_images_result_10_43c003ce (1).jpg" /></th>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+    <tr>
+      <td align="left"><br />
+        <button style="float: right;" type="button"><a href="#top">Back to Top</a></button>
+        <br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</body>
+
+</html>
