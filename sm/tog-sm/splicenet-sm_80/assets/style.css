@@ -1,0 +1,92 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #222222;
+	color: #fff;
+}
+.container {
+	width: 1200px;
+	/* min-height: 1000px; */
+	margin: 0 auto; /* top and bottom, right and left */
+	text-align: left; /* top, right, bottom, left */
+	padding-top: 0em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	font-size: large;
+}
+
+.column4 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link {
+	color: #4488ff;
+	text-decoration: underline;
+}
+a:active {
+	color: #4488ff;
+	text-decoration: underline;
+}
+a:visited {
+	color: #4488ff;
+	text-decoration: underline;
+}
+a:hover {
+	color: #ff0000;
+	text-decoration: none;
+}
+.reference {
+	font-size: 80%;
+}
+.emph {
+	color: #B1FF00;
+}
+
+.column4 {
+	float: left;
+	width: 25%;
+  }
+
+  .column7 {
+	float: left;
+	width: 14%;
+  }
+
+.fixedButton{
+	position: fixed;
+	bottom: 0px;
+	right: 0px; 
+	padding: 20px;
+}
+.roundedFixedBtn{
+  height: 60px;
+  line-height: 80px;  
+  width: 60px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* .sd-dogs-table img {
+	height: 15em;
+	width: 15em;
+}
+
+.sd-horses-table img {
+	height: 15em;
+	width: 15em;
+} */
+

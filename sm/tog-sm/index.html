@@ -1,0 +1,435 @@
+<link href="https://fonts.cdnfonts.com/css/chalkduster" rel="stylesheet">
+<style>
+    @import url('https://fonts.cdnfonts.com/css/chalkduster');
+</style>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Disentangling Structure and Appearance in ViT Feature Space</title>
+<link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<button style="position: fixed;right: 15px;top:  50%;height: 100px;width: 140px; font-size: 20px;" type="button"><a href="#top">Back to top</a></button> 
+<div class="page-container">
+  <h1 align="center">Disentangling Structure and Appearance in ViT Feature Space</h1>
+  <h2 align="center">Supplementary Material</h2>
+	
+  <p align="center">&nbsp;</p>
+	<a href="#top"></a>
+  <ul>
+	<li>
+        SpliceNet Results
+        <ul>
+            <li><a href="#splicenet_results_container">Sample Results</a></li>
+            <li><a href="#style_content_control">Appearance Interpolation</a></li>
+            <li><a href="#style_modes">Appearance Modes</a></li>
+            <li><a href="#splicenet-videos">Video Stylization</a></li>
+        </ul>
+    </li>
+    <li>
+        SpliceNet Comparisons
+        <ul>
+            <li><a href="./splicenet-sm_80/comp-sd-dogs.html">SD-Dogs</a></li>
+            <li><a href="./splicenet-sm_80/comp-sd-horses.html">SD-Horses</a></li>
+            <li><a href="./splicenet-sm_80/comp-flowers.html">Oxford-102</a></li>
+            <li><a href="./splicenet-sm_80/comp-afhq.html">AFHQ</a></li>
+        </ul>
+    </li>
+    <li>
+        SpliceNet Ablations
+        <ul>
+            <li><a href="./splicenet-sm_80/ablations.html#inlier_outlier">Dataset Distillation: Inlier / Outlier Examples</a></li>
+            <li><a href="./splicenet-sm_80/ablations.html#pairing">Results w/ and w/o Dataset Distillation</a></li>
+            <li><a href="./splicenet-sm_80/ablations.html#cnn_baselines">Results w/ [CLS] Token Input v.s. w/ Appearance Image Input</a></li>
+        </ul>
+    </li>
+  </ul>
+  <p><br><span class="emph">We recommend watching all images in full screen. Click on the images for seeing them in full scale.</span></p>
+	
+  
+
+<p align="center">&nbsp;</p>
+
+
+
+    <hr>
+
+
+    <p align="center">&nbsp;</p>
+    <h2 id="splicenet_results_container">SpliceNet Results</h2>
+    <p align="left">We present SpliceNet results of semantic appearance transfer on a variety of structure and appearance image pairs.</p>
+    
+
+
+    <!-- Teaser -->
+
+    <table align="center" class="sd-dogs-table">
+     
+      <tr>
+        <th><p>appearance</p></th>
+        <th><p>structure</p></th>        
+        <th><p>SpliceNet (Ours)</p></th>
+      </tr>
+      <tr>
+          <th><a href="./splicenet-sm_80/assets/teaser/cat.jpg"> <a href="./splicenet-sm_80/assets/teaser/cat.jpg"> <img  height="250" src="./splicenet-sm_80/assets/teaser/cat.jpg"> </a> </a></th>
+          <th><a href="./splicenet-sm_80/assets/teaser/leopard.jpg"> <a href="./splicenet-sm_80/assets/teaser/leopard.jpg"> <img  height="250" src="./splicenet-sm_80/assets/teaser/leopard.jpg"> </a> </a></th>
+          <th><a href="./splicenet-sm_80/assets/teaser/leopard_cat.jpg"> <a href="./splicenet-sm_80/assets/teaser/leopard_cat.jpg"> <img  height="250" src="./splicenet-sm_80/assets/teaser/leopard_cat.jpg"> </a> </a></th>
+      </tr>
+
+    </table>
+
+    <table align="center">
+        <tr>
+            <th><p>appearance</p></th>
+            <th><p>structure</p></th>        
+            <th><p>SpliceNet (Ours)</p></th>
+        </tr>
+        <tr>  
+            <th><a href="./splicenet-sm_80/assets/teaser/dog_style.jpg"> <a href="./splicenet-sm_80/assets/teaser/dog_style.jpg"> <img  height="230" src="./splicenet-sm_80/assets/teaser/dog_style.jpg"> </a> </a></th>
+            <th><a href="./splicenet-sm_80/assets/teaser/dog_content.jpg"> <a href="./splicenet-sm_80/assets/teaser/dog_content.jpg"> <img  height="230" src="./splicenet-sm_80/assets/teaser/dog_content.jpg"> </a> </a></th>
+            <th ><a href="./splicenet-sm_80/assets/teaser/dog_splice.jpg"> <a href="./splicenet-sm_80/assets/teaser/dog_splice.jpg"> <img  height="230" src="./splicenet-sm_80/assets/teaser/dog_splice.jpg"> </a> </a></th>
+        </tr>
+    </table>
+
+    <table align="center">  
+
+      <tr>
+        <th><p>appearance</p></th>
+        <th><p>structure</p></th>        
+        <th><p>SpliceNet (Ours)</p></th>
+      </tr>
+
+      <tr>
+        <th ><a href="./splicenet-sm_80/assets/teaser/flowers_style.jpg"> <a href="./splicenet-sm_80/assets/teaser/flowers_style.jpg"> <img  height="230" src="./splicenet-sm_80/assets/teaser/flowers_style.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/teaser/flowers_content.jpg"> <a href="./splicenet-sm_80/assets/teaser/flowers_content.jpg"> <img  height="230" src="./splicenet-sm_80/assets/teaser/flowers_content.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/teaser/flowers_splice.jpg"> <a href="./splicenet-sm_80/assets/teaser/flowers_splice.jpg"> <img  height="230" src="./splicenet-sm_80/assets/teaser/flowers_splice.jpg"> </a> </a></th>
+      </tr>
+    </table>
+
+
+    <!-- Mixing -->
+
+    <br />
+    <br />
+    <br />
+
+
+    <div style="width: fit-content; margin: auto;">
+        <table align="center" class="sd-dogs-table" style="display: inline-block;">
+            <tr>
+                <th>Animal Faces</th>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/1.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/1.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/1.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/2.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/2.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/2.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/3.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/3.jpg"> <img  height="200em" src="./splicenet-sm_80/assets/mixing/afhq/3.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/4.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/4.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/4.jpg"> </a> </a></th>
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/5.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/5.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/5.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/5_1.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/5_1.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/5_1.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/5_2.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/5_2.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/5_2.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/5_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/5_3.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/5_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/5_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/5_4.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/5_4.jpg"> </a> </a></th>
+      
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/6.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/6.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/6.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/6_1.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/6_1.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/6_1.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/6_2.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/6_2.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/6_2.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/6_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/6_3.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/6_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/afhq/6_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/6_4.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/6_4.jpg"> </a> </a></th>
+            </tr>
+
+            <tr>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/7.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/7.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/7.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/7_1.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/7_1.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/7_1.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/7_2.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/7_2.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/7_2.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/7_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/7_3.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/7_3.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/afhq/7_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/7_4.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/7_4.jpg"> </a> </a></th>
+              </tr>
+
+            <tr>
+            <th><a href="./splicenet-sm_80/assets/mixing/afhq/8.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/8.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/8.jpg"> </a> </a></th>
+            <th><a href="./splicenet-sm_80/assets/mixing/afhq/8_1.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/8_1.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/8_1.jpg"> </a> </a></th>
+            <th><a href="./splicenet-sm_80/assets/mixing/afhq/8_2.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/8_2.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/8_2.jpg"> </a> </a></th>
+            <th><a href="./splicenet-sm_80/assets/mixing/afhq/8_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/8_3.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/8_3.jpg"> </a> </a></th>
+            <th><a href="./splicenet-sm_80/assets/mixing/afhq/8_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/afhq/8_4.jpg"> <img  width="200em" src="./splicenet-sm_80/assets/mixing/afhq/8_4.jpg"> </a> </a></th>
+            </tr>
+
+          </table>
+
+    </div>
+
+
+    <br />
+    <br />
+
+    <div style="width: fit-content; margin: auto;">
+        <table align="center" style="display: inline-block;">
+            <tr>
+                <th>Flowers</th>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/3.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/3.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/4.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/4.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/5.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/5.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/6.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/6.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/6.jpg"> </a> </a></th>
+      
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/1.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/1.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/1.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/1_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/1_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/1_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/1_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/1_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/1_4.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/1_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/1_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/1_5.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/1_6.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/1_6.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/1_6.jpg"> </a> </a></th>
+      
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/2.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/2.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/2.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/2_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/2_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/2_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/2_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/2_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/2_4.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/2_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/2_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/2_5.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/flowers/2_6.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/2_6.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/2_6.jpg"> </a> </a></th>
+            </tr>
+
+            
+            <tr>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/7.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/7.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/7.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/7_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/7_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/7_3.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/7_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/7_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/7_4.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/7_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/7_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/7_5.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/flowers/7_6.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/7_6.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/7_6.jpg"> </a> </a></th>
+              </tr>
+            
+              <tr>
+                  <th><a href="./splicenet-sm_80/assets/mixing/flowers/8.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/8.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/8.jpg"> </a> </a></th>
+                  <th><a href="./splicenet-sm_80/assets/mixing/flowers/8_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/8_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/8_3.jpg"> </a> </a></th>
+                  <th><a href="./splicenet-sm_80/assets/mixing/flowers/8_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/8_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/8_4.jpg"> </a> </a></th>
+                  <th><a href="./splicenet-sm_80/assets/mixing/flowers/8_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/8_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/8_5.jpg"> </a> </a></th>
+                  <th><a href="./splicenet-sm_80/assets/mixing/flowers/8_6.jpg"> <a href="./splicenet-sm_80/assets/mixing/flowers/8_6.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/flowers/8_6.jpg"> </a> </a></th>
+                </tr>
+          </table>
+    </div>
+
+
+    <br />
+    <br />
+
+    <div style="width: fit-content; margin: auto;">
+        <table align="center" class="sd-dogs-table" style="display: inline-block;">
+            <tr>
+                <th>SD-Dogs</th>
+                <th><a href="./splicenet-sm_80/assets/mixing/dogs/3.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/3.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/dogs/4.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/4.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/dogs/5.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/5.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/dogs/6.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/6.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/6.jpg"> </a> </a></th>
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/1.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/1.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/1.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/1_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/1_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/1_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/1_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/1_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/1_4.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/1_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/1_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/1_5.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/1_6.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/1_6.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/1_6.jpg"> </a> </a></th>
+      
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/2.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/2.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/2.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/2_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/2_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/2_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/2_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/2_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/2_4.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/2_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/2_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/2_5.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/dogs/2_6.jpg"> <a href="./splicenet-sm_80/assets/mixing/dogs/2_6.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/dogs/2_6.jpg"> </a> </a></th>
+            </tr>
+      
+          </table>
+    </div>
+
+
+    <br />
+    <br />
+
+    <div style="width: fit-content; margin: auto;">
+      
+        <table align="center" style="display: inline-block;">
+            <tr>
+                <th>SD-Horses</th>
+                <th><a href="./splicenet-sm_80/assets/mixing/horses/3.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/3.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/horses/4.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/4.jpg"> </a> </a></th>
+                <th><a href="./splicenet-sm_80/assets/mixing/horses/5.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/5.jpg"> </a> </a></th>
+      
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/1.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/1.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/1.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/1_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/1_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/1_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/1_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/1_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/1_4.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/1_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/1_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/1_5.jpg"> </a> </a></th>
+      
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/2.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/2.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/2.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/2_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/2_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/2_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/2_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/2_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/2_4.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/2_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/2_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/2_5.jpg"> </a> </a></th>
+            </tr>
+      
+            <tr>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/10.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/10.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/10.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/10_3.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/10_3.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/10_3.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/10_4.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/10_4.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/10_4.jpg"> </a> </a></th>
+              <th><a href="./splicenet-sm_80/assets/mixing/horses/10_5.jpg"> <a href="./splicenet-sm_80/assets/mixing/horses/10_5.jpg"> <img  width="250em" src="./splicenet-sm_80/assets/mixing/horses/10_5.jpg"> </a> </a></th>
+            </tr>
+      
+          </table>
+
+    </div>
+
+    <hr/>
+
+    <h2 align="center" id="style_content_control">Appearance Interpolation</h2>
+    <p align="left">We can control the extent of stylization by
+feeding to our model interpolating the [CLS] tokens of the appearance and
+structure images. (See Sec. 4.5)</p>
+    <p style="color:rgb(51, 255, 0)">Animations appear in the following section.</p>
+    <table align="center">
+      <tr>
+        <th><video width="500" playsinline autoplay muted loop><source src="./splicenet-sm_80/assets/style_content_control/afhq_interp/afhq_interp.mp4" type="video/mp4"/></th>
+        <th><video width="500" playsinline autoplay muted loop><source src="./splicenet-sm_80/assets/style_content_control/sd_dogs_interp1/sd_dogs_interp1.mp4" type="video/mp4"/></th>
+      </tr>
+      <tr>
+        <th><video width="500" playsinline autoplay muted loop><source src="./splicenet-sm_80/assets/style_content_control/sd_dogs_interp16/sd_dogs_interp16.mp4" type="video/mp4"/></th>
+        <th><video width="500" playsinline autoplay muted loop><source src="./splicenet-sm_80/assets/style_content_control/sd_dogs_interp27/sd_dogs_interp27.mp4" type="video/mp4"/></th>
+      </tr>
+    </table>
+
+
+
+    <hr>
+
+
+    <h2 align="center" id="style_modes">Detecting and Visualizing Appearance Modes.</h2>
+    <p align="left">
+        Appearance modes are automatically detected by clustering the [CLS] token across all AFHQ training set. We transfer each of the discovered appearance  modes  to test structure images. See
+        Sec. 4.5.
+    </p>
+    <table align="center">
+      <tr>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_0.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_0.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_0.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_0.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_0.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_0.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_1.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_1.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_1.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_2.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_2.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_2.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_3.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_3.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_3.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_4.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_4.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_4.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_5.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_5.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_5.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_6.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_6.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_6.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_7.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_7.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_7.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_8.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_8.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_0_8.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_1.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_1.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_1.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_0.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_0.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_0.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_1.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_1.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_1.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_2.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_2.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_2.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_3.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_3.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_3.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_4.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_4.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_4.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_5.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_5.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_5.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_6.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_6.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_6.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_7.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_7.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_7.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_8.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_8.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_1_8.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_2.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_2.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_2.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_0.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_0.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_0.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_1.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_1.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_1.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_2.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_2.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_2.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_3.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_3.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_3.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_4.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_4.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_4.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_5.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_5.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_5.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_6.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_6.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_6.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_7.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_7.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_7.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_8.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_8.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_2_8.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_3.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_3.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_3.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_0.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_0.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_0.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_1.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_1.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_1.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_2.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_2.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_2.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_3.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_3.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_3.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_4.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_4.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_4.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_5.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_5.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_5.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_6.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_6.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_6.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_7.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_7.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_7.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_8.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_8.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_3_8.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_4.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_4.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_4.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_0.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_0.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_0.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_1.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_1.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_1.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_2.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_2.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_2.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_3.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_3.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_3.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_4.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_4.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_4.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_5.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_5.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_5.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_6.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_6.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_6.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_7.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_7.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_7.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_8.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_8.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_4_8.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_6.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_6.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_6.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_0.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_0.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_0.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_1.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_1.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_1.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_2.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_2.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_2.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_3.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_3.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_3.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_4.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_4.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_4.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_5.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_5.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_5.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_6.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_6.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_6.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_7.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_7.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_7.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_8.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_8.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_6_8.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_7.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_7.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/s_7.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_0.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_0.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_0.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_1.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_1.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_1.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_2.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_2.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_2.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_3.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_3.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_3.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_4.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_4.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_4.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_5.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_5.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_5.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_6.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_6.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_6.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_7.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_7.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_7.jpg"> </a> </a></th>
+        <th><a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_8.jpg"> <a href="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_8.jpg"> <img  height="128" src="./splicenet-sm_80/assets/style_modes/afhq_out_k=9/m_7_8.jpg"> </a> </a></th>
+      </tr>
+    </table>
+
+
+    <hr>
+    
+    <h2 align="center" id="splicenet-videos">SpliceNet Video Stylization</h2>
+    <p align="left">Given a video and an appearance image as input, we apply SpliceNet on each frame separately to achieve a stylized video.</p>
+    <table align="center">
+      <tr>
+        <th><video width="1000" playsinline autoplay muted loop><source src="./splicenet-sm_80/assets/videos/vid1.mp4" type="video/mp4"/></th>
+      </tr>
+      <tr>
+        <th><video width="1000" playsinline autoplay muted loop><source src="./splicenet-sm_80/assets/videos/vid2.mp4" type="video/mp4"/></th>
+
+      </tr>
+    </table>
+
+
+
+
+	
+  <p><br>
+  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+
+</div>
+
+</body></html>

@@ -120,6 +120,11 @@ table#video {
 	font-weight: 500;
 }
 
+.subsection {
+	font-size: 100%;
+	font-weight: bold;
+}
+
 .bibtex {
 	font-family: Google Sans, Courier, monospace;
 	white-space: pre;

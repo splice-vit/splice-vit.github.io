@@ -1,0 +1,1015 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Disentangling Structure and Appearance in ViT Feature Space</title>
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <button style="position: fixed;right: 15px;top:  50%;height: 100px;width: 140px; font-size: 20px;" type="button"><a href="#top">Back to top</a></button> 
+  <div class="container">
+    <h1 align="center">Disentangling Structure and Appearance in ViT Feature Space</h1>
+    <h2 align="center">Supplementary Material</h2>
+
+    <p align="center">&nbsp;</p>
+    <h2 align="center">SpliceNet Comparisons: SD-Horses</h2>
+    <p align="left">We present SpliceNet results of semantic appearance transfer with respect to the recent baselines: 
+        (1) Kim. et al <a href="#ref-kim">[1]</a>  (2) Swapping Autoencoders (SA) <a href="#ref-sa">[2]</a>  (3) WCT2 <a href="#ref-wct">[3]</a> (4) Splice. SpliceNet manages to transfer complex texture on corresponding 
+      semantic parts across images.  Note that in some cases, Splice is prone to instabilities during its optimization process, which may lead to incorrect semantic association
+      and poor visual quality. On the other hand, since SpliceNet is trained on a dataset of semantically related image pairs, it results in a better semantic association, higher visual quality,
+      and is more robust to challenging, unaligned input pairs</p>
+    
+
+      <table width="100%">
+        <tr>
+            <td align="left">	<br />
+            <button style="float: right;" type="button"><a href="../index.html">Back to main page</a></button>
+            </td>
+          </tr>
+    </table>
+    <table align="center" class="sd-horses-table">
+
+      
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al. <a href="#ref-kim">[1]</a> </p></th>
+        <th><p>SA <a href="#ref-sa">[2]</a></p></th>
+        <th><p>WCT2 <a href="#ref-wct">[3]</a></p></th>    
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/0.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/0.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/0.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/0.jpg"> <a href="./assets/baselines_results/sd_horses/structure/0.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/0.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/0.jpg"> <a href="./assets/baselines_results/sd_horses/swap/0.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/0.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/0.jpg"> <a href="./assets/baselines_results/sd_horses/SA/0.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/0.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/0.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/0.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/0.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/0.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/0.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/0.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/0.jpg"> <a href="./assets/baselines_results/sd_horses/ours/0.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/0.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/1.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/1.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/1.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/1.jpg"> <a href="./assets/baselines_results/sd_horses/structure/1.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/1.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/1.jpg"> <a href="./assets/baselines_results/sd_horses/swap/1.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/1.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/1.jpg"> <a href="./assets/baselines_results/sd_horses/SA/1.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/1.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/1.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/1.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/1.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/1.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/1.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/1.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/1.jpg"> <a href="./assets/baselines_results/sd_horses/ours/1.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/1.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/2.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/2.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/2.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/2.jpg"> <a href="./assets/baselines_results/sd_horses/structure/2.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/2.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/2.jpg"> <a href="./assets/baselines_results/sd_horses/swap/2.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/2.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/2.jpg"> <a href="./assets/baselines_results/sd_horses/SA/2.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/2.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/2.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/2.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/2.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/2.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/2.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/2.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/2.jpg"> <a href="./assets/baselines_results/sd_horses/ours/2.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/2.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/3.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/3.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/3.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/3.jpg"> <a href="./assets/baselines_results/sd_horses/structure/3.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/3.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/3.jpg"> <a href="./assets/baselines_results/sd_horses/swap/3.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/3.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/3.jpg"> <a href="./assets/baselines_results/sd_horses/SA/3.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/3.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/3.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/3.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/3.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/3.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/3.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/3.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/3.jpg"> <a href="./assets/baselines_results/sd_horses/ours/3.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/3.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/4.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/4.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/4.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/4.jpg"> <a href="./assets/baselines_results/sd_horses/structure/4.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/4.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/4.jpg"> <a href="./assets/baselines_results/sd_horses/swap/4.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/4.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/4.jpg"> <a href="./assets/baselines_results/sd_horses/SA/4.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/4.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/4.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/4.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/4.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/4.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/4.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/4.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/4.jpg"> <a href="./assets/baselines_results/sd_horses/ours/4.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/4.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/5.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/5.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/5.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/5.jpg"> <a href="./assets/baselines_results/sd_horses/structure/5.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/5.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/5.jpg"> <a href="./assets/baselines_results/sd_horses/swap/5.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/5.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/5.jpg"> <a href="./assets/baselines_results/sd_horses/SA/5.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/5.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/5.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/5.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/5.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/5.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/5.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/5.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/5.jpg"> <a href="./assets/baselines_results/sd_horses/ours/5.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/5.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/6.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/6.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/6.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/6.jpg"> <a href="./assets/baselines_results/sd_horses/structure/6.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/6.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/6.jpg"> <a href="./assets/baselines_results/sd_horses/swap/6.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/6.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/6.jpg"> <a href="./assets/baselines_results/sd_horses/SA/6.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/6.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/6.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/6.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/6.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/6.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/6.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/6.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/6.jpg"> <a href="./assets/baselines_results/sd_horses/ours/6.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/6.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/7.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/7.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/7.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/7.jpg"> <a href="./assets/baselines_results/sd_horses/structure/7.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/7.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/7.jpg"> <a href="./assets/baselines_results/sd_horses/swap/7.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/7.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/7.jpg"> <a href="./assets/baselines_results/sd_horses/SA/7.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/7.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/7.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/7.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/7.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/7.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/7.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/7.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/7.jpg"> <a href="./assets/baselines_results/sd_horses/ours/7.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/7.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/8.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/8.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/8.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/8.jpg"> <a href="./assets/baselines_results/sd_horses/structure/8.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/8.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/8.jpg"> <a href="./assets/baselines_results/sd_horses/swap/8.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/8.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/8.jpg"> <a href="./assets/baselines_results/sd_horses/SA/8.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/8.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/8.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/8.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/8.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/8.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/8.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/8.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/8.jpg"> <a href="./assets/baselines_results/sd_horses/ours/8.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/8.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/9.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/9.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/9.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/9.jpg"> <a href="./assets/baselines_results/sd_horses/structure/9.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/9.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/9.jpg"> <a href="./assets/baselines_results/sd_horses/swap/9.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/9.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/9.jpg"> <a href="./assets/baselines_results/sd_horses/SA/9.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/9.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/9.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/9.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/9.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/9.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/9.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/9.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/9.jpg"> <a href="./assets/baselines_results/sd_horses/ours/9.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/9.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/10.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/10.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/10.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/10.jpg"> <a href="./assets/baselines_results/sd_horses/structure/10.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/10.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/10.jpg"> <a href="./assets/baselines_results/sd_horses/swap/10.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/10.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/10.jpg"> <a href="./assets/baselines_results/sd_horses/SA/10.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/10.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/10.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/10.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/10.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/10.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/10.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/10.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/10.jpg"> <a href="./assets/baselines_results/sd_horses/ours/10.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/10.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/11.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/11.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/11.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/11.jpg"> <a href="./assets/baselines_results/sd_horses/structure/11.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/11.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/11.jpg"> <a href="./assets/baselines_results/sd_horses/swap/11.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/11.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/11.jpg"> <a href="./assets/baselines_results/sd_horses/SA/11.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/11.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/11.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/11.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/11.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/11.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/11.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/11.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/11.jpg"> <a href="./assets/baselines_results/sd_horses/ours/11.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/11.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/12.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/12.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/12.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/12.jpg"> <a href="./assets/baselines_results/sd_horses/structure/12.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/12.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/12.jpg"> <a href="./assets/baselines_results/sd_horses/swap/12.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/12.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/12.jpg"> <a href="./assets/baselines_results/sd_horses/SA/12.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/12.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/12.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/12.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/12.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/12.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/12.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/12.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/12.jpg"> <a href="./assets/baselines_results/sd_horses/ours/12.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/12.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/13.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/13.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/13.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/13.jpg"> <a href="./assets/baselines_results/sd_horses/structure/13.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/13.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/13.jpg"> <a href="./assets/baselines_results/sd_horses/swap/13.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/13.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/13.jpg"> <a href="./assets/baselines_results/sd_horses/SA/13.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/13.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/13.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/13.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/13.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/13.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/13.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/13.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/13.jpg"> <a href="./assets/baselines_results/sd_horses/ours/13.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/13.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/14.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/14.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/14.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/14.jpg"> <a href="./assets/baselines_results/sd_horses/structure/14.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/14.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/14.jpg"> <a href="./assets/baselines_results/sd_horses/swap/14.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/14.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/14.jpg"> <a href="./assets/baselines_results/sd_horses/SA/14.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/14.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/14.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/14.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/14.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/14.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/14.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/14.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/14.jpg"> <a href="./assets/baselines_results/sd_horses/ours/14.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/14.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/15.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/15.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/15.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/15.jpg"> <a href="./assets/baselines_results/sd_horses/structure/15.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/15.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/15.jpg"> <a href="./assets/baselines_results/sd_horses/swap/15.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/15.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/15.jpg"> <a href="./assets/baselines_results/sd_horses/SA/15.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/15.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/15.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/15.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/15.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/15.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/15.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/15.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/15.jpg"> <a href="./assets/baselines_results/sd_horses/ours/15.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/15.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/16.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/16.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/16.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/16.jpg"> <a href="./assets/baselines_results/sd_horses/structure/16.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/16.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/16.jpg"> <a href="./assets/baselines_results/sd_horses/swap/16.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/16.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/16.jpg"> <a href="./assets/baselines_results/sd_horses/SA/16.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/16.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/16.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/16.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/16.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/16.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/16.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/16.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/16.jpg"> <a href="./assets/baselines_results/sd_horses/ours/16.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/16.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/17.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/17.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/17.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/17.jpg"> <a href="./assets/baselines_results/sd_horses/structure/17.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/17.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/17.jpg"> <a href="./assets/baselines_results/sd_horses/swap/17.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/17.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/17.jpg"> <a href="./assets/baselines_results/sd_horses/SA/17.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/17.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/17.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/17.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/17.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/17.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/17.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/17.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/17.jpg"> <a href="./assets/baselines_results/sd_horses/ours/17.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/17.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/18.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/18.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/18.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/18.jpg"> <a href="./assets/baselines_results/sd_horses/structure/18.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/18.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/18.jpg"> <a href="./assets/baselines_results/sd_horses/swap/18.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/18.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/18.jpg"> <a href="./assets/baselines_results/sd_horses/SA/18.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/18.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/18.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/18.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/18.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/18.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/18.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/18.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/18.jpg"> <a href="./assets/baselines_results/sd_horses/ours/18.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/18.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/19.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/19.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/19.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/19.jpg"> <a href="./assets/baselines_results/sd_horses/structure/19.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/19.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/19.jpg"> <a href="./assets/baselines_results/sd_horses/swap/19.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/19.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/19.jpg"> <a href="./assets/baselines_results/sd_horses/SA/19.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/19.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/19.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/19.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/19.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/19.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/19.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/19.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/19.jpg"> <a href="./assets/baselines_results/sd_horses/ours/19.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/19.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/20.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/20.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/20.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/20.jpg"> <a href="./assets/baselines_results/sd_horses/structure/20.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/20.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/20.jpg"> <a href="./assets/baselines_results/sd_horses/swap/20.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/20.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/20.jpg"> <a href="./assets/baselines_results/sd_horses/SA/20.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/20.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/20.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/20.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/20.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/20.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/20.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/20.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/20.jpg"> <a href="./assets/baselines_results/sd_horses/ours/20.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/20.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/21.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/21.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/21.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/21.jpg"> <a href="./assets/baselines_results/sd_horses/structure/21.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/21.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/21.jpg"> <a href="./assets/baselines_results/sd_horses/swap/21.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/21.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/21.jpg"> <a href="./assets/baselines_results/sd_horses/SA/21.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/21.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/21.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/21.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/21.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/21.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/21.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/21.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/21.jpg"> <a href="./assets/baselines_results/sd_horses/ours/21.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/21.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/22.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/22.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/22.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/22.jpg"> <a href="./assets/baselines_results/sd_horses/structure/22.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/22.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/22.jpg"> <a href="./assets/baselines_results/sd_horses/swap/22.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/22.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/22.jpg"> <a href="./assets/baselines_results/sd_horses/SA/22.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/22.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/22.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/22.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/22.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/22.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/22.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/22.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/22.jpg"> <a href="./assets/baselines_results/sd_horses/ours/22.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/22.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/23.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/23.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/23.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/23.jpg"> <a href="./assets/baselines_results/sd_horses/structure/23.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/23.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/23.jpg"> <a href="./assets/baselines_results/sd_horses/swap/23.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/23.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/23.jpg"> <a href="./assets/baselines_results/sd_horses/SA/23.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/23.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/23.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/23.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/23.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/23.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/23.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/23.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/23.jpg"> <a href="./assets/baselines_results/sd_horses/ours/23.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/23.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/24.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/24.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/24.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/24.jpg"> <a href="./assets/baselines_results/sd_horses/structure/24.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/24.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/24.jpg"> <a href="./assets/baselines_results/sd_horses/swap/24.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/24.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/24.jpg"> <a href="./assets/baselines_results/sd_horses/SA/24.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/24.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/24.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/24.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/24.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/24.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/24.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/24.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/24.jpg"> <a href="./assets/baselines_results/sd_horses/ours/24.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/24.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/25.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/25.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/25.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/25.jpg"> <a href="./assets/baselines_results/sd_horses/structure/25.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/25.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/25.jpg"> <a href="./assets/baselines_results/sd_horses/swap/25.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/25.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/25.jpg"> <a href="./assets/baselines_results/sd_horses/SA/25.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/25.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/25.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/25.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/25.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/25.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/25.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/25.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/25.jpg"> <a href="./assets/baselines_results/sd_horses/ours/25.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/25.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/26.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/26.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/26.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/26.jpg"> <a href="./assets/baselines_results/sd_horses/structure/26.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/26.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/26.jpg"> <a href="./assets/baselines_results/sd_horses/swap/26.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/26.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/26.jpg"> <a href="./assets/baselines_results/sd_horses/SA/26.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/26.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/26.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/26.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/26.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/26.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/26.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/26.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/26.jpg"> <a href="./assets/baselines_results/sd_horses/ours/26.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/26.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/27.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/27.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/27.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/27.jpg"> <a href="./assets/baselines_results/sd_horses/structure/27.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/27.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/27.jpg"> <a href="./assets/baselines_results/sd_horses/swap/27.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/27.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/27.jpg"> <a href="./assets/baselines_results/sd_horses/SA/27.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/27.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/27.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/27.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/27.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/27.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/27.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/27.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/27.jpg"> <a href="./assets/baselines_results/sd_horses/ours/27.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/27.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/28.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/28.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/28.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/28.jpg"> <a href="./assets/baselines_results/sd_horses/structure/28.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/28.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/28.jpg"> <a href="./assets/baselines_results/sd_horses/swap/28.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/28.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/28.jpg"> <a href="./assets/baselines_results/sd_horses/SA/28.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/28.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/28.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/28.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/28.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/28.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/28.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/28.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/28.jpg"> <a href="./assets/baselines_results/sd_horses/ours/28.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/28.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/29.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/29.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/29.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/29.jpg"> <a href="./assets/baselines_results/sd_horses/structure/29.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/29.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/29.jpg"> <a href="./assets/baselines_results/sd_horses/swap/29.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/29.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/29.jpg"> <a href="./assets/baselines_results/sd_horses/SA/29.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/29.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/29.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/29.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/29.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/29.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/29.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/29.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/29.jpg"> <a href="./assets/baselines_results/sd_horses/ours/29.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/29.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/30.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/30.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/30.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/30.jpg"> <a href="./assets/baselines_results/sd_horses/structure/30.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/30.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/30.jpg"> <a href="./assets/baselines_results/sd_horses/swap/30.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/30.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/30.jpg"> <a href="./assets/baselines_results/sd_horses/SA/30.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/30.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/30.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/30.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/30.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/30.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/30.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/30.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/30.jpg"> <a href="./assets/baselines_results/sd_horses/ours/30.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/30.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/31.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/31.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/31.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/31.jpg"> <a href="./assets/baselines_results/sd_horses/structure/31.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/31.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/31.jpg"> <a href="./assets/baselines_results/sd_horses/swap/31.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/31.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/31.jpg"> <a href="./assets/baselines_results/sd_horses/SA/31.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/31.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/31.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/31.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/31.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/31.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/31.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/31.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/31.jpg"> <a href="./assets/baselines_results/sd_horses/ours/31.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/31.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/32.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/32.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/32.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/32.jpg"> <a href="./assets/baselines_results/sd_horses/structure/32.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/32.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/32.jpg"> <a href="./assets/baselines_results/sd_horses/swap/32.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/32.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/32.jpg"> <a href="./assets/baselines_results/sd_horses/SA/32.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/32.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/32.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/32.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/32.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/32.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/32.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/32.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/32.jpg"> <a href="./assets/baselines_results/sd_horses/ours/32.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/32.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/33.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/33.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/33.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/33.jpg"> <a href="./assets/baselines_results/sd_horses/structure/33.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/33.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/33.jpg"> <a href="./assets/baselines_results/sd_horses/swap/33.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/33.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/33.jpg"> <a href="./assets/baselines_results/sd_horses/SA/33.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/33.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/33.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/33.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/33.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/33.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/33.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/33.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/33.jpg"> <a href="./assets/baselines_results/sd_horses/ours/33.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/33.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/34.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/34.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/34.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/34.jpg"> <a href="./assets/baselines_results/sd_horses/structure/34.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/34.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/34.jpg"> <a href="./assets/baselines_results/sd_horses/swap/34.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/34.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/34.jpg"> <a href="./assets/baselines_results/sd_horses/SA/34.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/34.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/34.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/34.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/34.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/34.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/34.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/34.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/34.jpg"> <a href="./assets/baselines_results/sd_horses/ours/34.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/34.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/35.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/35.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/35.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/35.jpg"> <a href="./assets/baselines_results/sd_horses/structure/35.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/35.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/35.jpg"> <a href="./assets/baselines_results/sd_horses/swap/35.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/35.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/35.jpg"> <a href="./assets/baselines_results/sd_horses/SA/35.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/35.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/35.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/35.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/35.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/35.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/35.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/35.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/35.jpg"> <a href="./assets/baselines_results/sd_horses/ours/35.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/35.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/36.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/36.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/36.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/36.jpg"> <a href="./assets/baselines_results/sd_horses/structure/36.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/36.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/36.jpg"> <a href="./assets/baselines_results/sd_horses/swap/36.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/36.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/36.jpg"> <a href="./assets/baselines_results/sd_horses/SA/36.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/36.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/36.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/36.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/36.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/36.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/36.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/36.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/36.jpg"> <a href="./assets/baselines_results/sd_horses/ours/36.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/36.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/37.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/37.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/37.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/37.jpg"> <a href="./assets/baselines_results/sd_horses/structure/37.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/37.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/37.jpg"> <a href="./assets/baselines_results/sd_horses/swap/37.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/37.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/37.jpg"> <a href="./assets/baselines_results/sd_horses/SA/37.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/37.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/37.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/37.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/37.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/37.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/37.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/37.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/37.jpg"> <a href="./assets/baselines_results/sd_horses/ours/37.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/37.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/38.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/38.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/38.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/38.jpg"> <a href="./assets/baselines_results/sd_horses/structure/38.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/38.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/38.jpg"> <a href="./assets/baselines_results/sd_horses/swap/38.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/38.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/38.jpg"> <a href="./assets/baselines_results/sd_horses/SA/38.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/38.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/38.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/38.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/38.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/38.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/38.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/38.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/38.jpg"> <a href="./assets/baselines_results/sd_horses/ours/38.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/38.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/39.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/39.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/39.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/39.jpg"> <a href="./assets/baselines_results/sd_horses/structure/39.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/39.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/39.jpg"> <a href="./assets/baselines_results/sd_horses/swap/39.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/39.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/39.jpg"> <a href="./assets/baselines_results/sd_horses/SA/39.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/39.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/39.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/39.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/39.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/39.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/39.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/39.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/39.jpg"> <a href="./assets/baselines_results/sd_horses/ours/39.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/39.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/40.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/40.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/40.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/40.jpg"> <a href="./assets/baselines_results/sd_horses/structure/40.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/40.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/40.jpg"> <a href="./assets/baselines_results/sd_horses/swap/40.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/40.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/40.jpg"> <a href="./assets/baselines_results/sd_horses/SA/40.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/40.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/40.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/40.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/40.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/40.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/40.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/40.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/40.jpg"> <a href="./assets/baselines_results/sd_horses/ours/40.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/40.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/41.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/41.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/41.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/41.jpg"> <a href="./assets/baselines_results/sd_horses/structure/41.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/41.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/41.jpg"> <a href="./assets/baselines_results/sd_horses/swap/41.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/41.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/41.jpg"> <a href="./assets/baselines_results/sd_horses/SA/41.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/41.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/41.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/41.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/41.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/41.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/41.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/41.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/41.jpg"> <a href="./assets/baselines_results/sd_horses/ours/41.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/41.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/42.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/42.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/42.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/42.jpg"> <a href="./assets/baselines_results/sd_horses/structure/42.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/42.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/42.jpg"> <a href="./assets/baselines_results/sd_horses/swap/42.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/42.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/42.jpg"> <a href="./assets/baselines_results/sd_horses/SA/42.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/42.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/42.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/42.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/42.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/42.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/42.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/42.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/42.jpg"> <a href="./assets/baselines_results/sd_horses/ours/42.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/42.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/43.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/43.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/43.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/43.jpg"> <a href="./assets/baselines_results/sd_horses/structure/43.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/43.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/43.jpg"> <a href="./assets/baselines_results/sd_horses/swap/43.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/43.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/43.jpg"> <a href="./assets/baselines_results/sd_horses/SA/43.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/43.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/43.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/43.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/43.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/43.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/43.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/43.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/43.jpg"> <a href="./assets/baselines_results/sd_horses/ours/43.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/43.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/44.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/44.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/44.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/44.jpg"> <a href="./assets/baselines_results/sd_horses/structure/44.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/44.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/44.jpg"> <a href="./assets/baselines_results/sd_horses/swap/44.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/44.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/44.jpg"> <a href="./assets/baselines_results/sd_horses/SA/44.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/44.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/44.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/44.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/44.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/44.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/44.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/44.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/44.jpg"> <a href="./assets/baselines_results/sd_horses/ours/44.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/44.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/45.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/45.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/45.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/45.jpg"> <a href="./assets/baselines_results/sd_horses/structure/45.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/45.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/45.jpg"> <a href="./assets/baselines_results/sd_horses/swap/45.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/45.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/45.jpg"> <a href="./assets/baselines_results/sd_horses/SA/45.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/45.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/45.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/45.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/45.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/45.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/45.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/45.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/45.jpg"> <a href="./assets/baselines_results/sd_horses/ours/45.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/45.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/46.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/46.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/46.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/46.jpg"> <a href="./assets/baselines_results/sd_horses/structure/46.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/46.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/46.jpg"> <a href="./assets/baselines_results/sd_horses/swap/46.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/46.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/46.jpg"> <a href="./assets/baselines_results/sd_horses/SA/46.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/46.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/46.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/46.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/46.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/46.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/46.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/46.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/46.jpg"> <a href="./assets/baselines_results/sd_horses/ours/46.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/46.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/47.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/47.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/47.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/47.jpg"> <a href="./assets/baselines_results/sd_horses/structure/47.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/47.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/47.jpg"> <a href="./assets/baselines_results/sd_horses/swap/47.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/47.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/47.jpg"> <a href="./assets/baselines_results/sd_horses/SA/47.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/47.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/47.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/47.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/47.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/47.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/47.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/47.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/47.jpg"> <a href="./assets/baselines_results/sd_horses/ours/47.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/47.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/48.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/48.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/48.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/48.jpg"> <a href="./assets/baselines_results/sd_horses/structure/48.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/48.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/48.jpg"> <a href="./assets/baselines_results/sd_horses/swap/48.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/48.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/48.jpg"> <a href="./assets/baselines_results/sd_horses/SA/48.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/48.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/48.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/48.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/48.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/48.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/48.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/48.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/48.jpg"> <a href="./assets/baselines_results/sd_horses/ours/48.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/48.jpg"> </a> </a></th>
+    </tr>
+    
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>Kim et al.</p></th>
+        <th><p>SA</p></th>
+        <th><p>WCT2</p></th>     
+        <th><p>Splice</p></th>          
+        <th><p>SpliceNet</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/baselines_results/sd_horses/appearance/49.jpg"> <a href="./assets/baselines_results/sd_horses/appearance/49.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/appearance/49.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/structure/49.jpg"> <a href="./assets/baselines_results/sd_horses/structure/49.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/structure/49.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/swap/49.jpg"> <a href="./assets/baselines_results/sd_horses/swap/49.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/swap/49.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/SA/49.jpg"> <a href="./assets/baselines_results/sd_horses/SA/49.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/SA/49.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/wct2/49.jpg"> <a href="./assets/baselines_results/sd_horses/wct2/49.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/wct2/49.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/splice_final/49.jpg"> <a href="./assets/baselines_results/sd_horses/splice_final/49.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/splice_final/49.jpg"> </a> </a></th>
+        <th><a href="./assets/baselines_results/sd_horses/ours/49.jpg"> <a href="./assets/baselines_results/sd_horses/ours/49.jpg"> <img  height="180" src="./assets/baselines_results/sd_horses/ours/49.jpg"> </a> </a></th>
+    </tr>
+     
+    </table>
+
+
+  </div> 
+
+
+
+  <p>
+    <a name="ref-kim" id="ref-kim"></a>
+    [1] Kunhee Kim, Sanghun Park, Eunyeong Jeon, Taehun Kim, and Daijin Kim. 2022.
+    A Style-aware Discriminator for Controllable Image Translation. In IEEE/CVF
+    Conference on Computer Vision and Pattern Recognition.  </p>
+  
+  
+  <p>
+    <a name="ref-sa" id="ref-sa"></a>
+    [2] Taesung Park, Jun-Yan Zhu, Oliver Wang, Jingwan Lu, Eli Shechtman, Alexei A. Efros, and Richard Zhang. 2020. Swapping Autoencoder for Deep Image Manipu- lation. In Advances in Neural Information Processing Systems
+  </p>
+  
+<p>
+    <a name="ref-wct" id="ref-wct"></a>
+    [3] Jaejun Yoo, Youngjung Uh, Sanghyuk Chun, Byeongkyu Kang, and Jung-Woo Ha. 2019. Photorealistic Style Transfer via Wavelet Transforms. In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV).
+  </p>
+  
+  
+
+</body>
+
+</html>
