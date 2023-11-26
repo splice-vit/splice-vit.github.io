@@ -1,0 +1,382 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Disentangling Structure and Appearance in ViT Feature Space</title>
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <button style="position: fixed;right: 15px;top:  50%;height: 100px;width: 140px; font-size: 20px;" type="button"><a href="#top">Back to top</a></button> 
+  <div class="container">
+    <h1 align="center">Disentangling Structure and Appearance in ViT Feature Space</h1>
+    <h2 align="center">Supplementary Material</h2>
+    
+    <h2 align="center">SpliceNet Ablations</h2>
+    <table width="100%">
+      <tr>
+        <td align="left">	<br />
+        <button style="float: right;" type="button"><a href="../index.html">Back to main page</a></button>
+        </td>
+      </tr>
+    </table>
+    <p align="center">&nbsp;</p>
+    
+    <hr>
+    <h2 align="center" id="inlier_outlier">Inlier / Outlier Examples</h2>
+    <p align="left">We present examples of inliers and outliers acquired using our pairing method (Sec. 3.5 in the paper).</p>
+    <h3 align="center">Dogs</h3>
+    <table align="center">
+      <tr>
+          <th><p>Source Image</p></th>
+          <th style="padding-left: 20px;"><p>Inliers</p></th>
+          <th><p></p></th>
+          <th><p></p></th>
+          <th><p></p></th>
+          <th style="padding-left: 20px;"><p>Outliers</p></th>
+          <th><p></p></th>
+          <th><p></p></th>
+          <th><p></p></th>
+      </tr>
+      <tr>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_dogs_pairing/set1/source/0.jpg"> <a href="./assets/sd_dogs_pairing/set1/source/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set1/source/0.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_dogs_pairing/set1/positive/0.jpg"> <a href="./assets/sd_dogs_pairing/set1/positive/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set1/positive/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set1/positive/1.jpg"> <a href="./assets/sd_dogs_pairing/set1/positive/1.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set1/positive/1.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set1/positive/2.jpg"> <a href="./assets/sd_dogs_pairing/set1/positive/2.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set1/positive/2.jpg"> </a> </a></th>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_dogs_pairing/set1/positive/3.jpg"> <a href="./assets/sd_dogs_pairing/set1/positive/3.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set1/positive/3.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_dogs_pairing/set1/negatives/0.jpg"> <a href="./assets/sd_dogs_pairing/set1/negatives/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set1/negatives/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set1/negatives/1.jpg"> <a href="./assets/sd_dogs_pairing/set1/negatives/1.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set1/negatives/1.jpg"> </a> </a></th>
+      </tr>
+
+      <tr>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_dogs_pairing/set2/source/0.jpg"> <a href="./assets/sd_dogs_pairing/set2/source/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set2/source/0.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_dogs_pairing/set2/positive/0.jpg"> <a href="./assets/sd_dogs_pairing/set2/positive/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set2/positive/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set2/positive/1.jpg"> <a href="./assets/sd_dogs_pairing/set2/positive/1.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set2/positive/1.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set2/positive/2.jpg"> <a href="./assets/sd_dogs_pairing/set2/positive/2.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set2/positive/2.jpg"> </a> </a></th>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_dogs_pairing/set2/positive/3.jpg"> <a href="./assets/sd_dogs_pairing/set2/positive/3.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set2/positive/3.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_dogs_pairing/set2/negatives/0.jpg"> <a href="./assets/sd_dogs_pairing/set2/negatives/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set2/negatives/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set2/negatives/1.jpg"> <a href="./assets/sd_dogs_pairing/set2/negatives/1.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set2/negatives/1.jpg"> </a> </a></th>
+      </tr>
+
+      <tr>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_dogs_pairing/set3/source/0.jpg"> <a href="./assets/sd_dogs_pairing/set3/source/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set3/source/0.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_dogs_pairing/set3/positive/0.jpg"> <a href="./assets/sd_dogs_pairing/set3/positive/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set3/positive/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set3/positive/1.jpg"> <a href="./assets/sd_dogs_pairing/set3/positive/1.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set3/positive/1.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set3/positive/2.jpg"> <a href="./assets/sd_dogs_pairing/set3/positive/2.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set3/positive/2.jpg"> </a> </a></th>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_dogs_pairing/set3/positive/3.jpg"> <a href="./assets/sd_dogs_pairing/set3/positive/3.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set3/positive/3.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_dogs_pairing/set3/negatives/0.jpg"> <a href="./assets/sd_dogs_pairing/set3/negatives/0.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set3/negatives/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/set3/negatives/1.jpg"> <a href="./assets/sd_dogs_pairing/set3/negatives/1.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/set3/negatives/1.jpg"> </a> </a></th>
+      </tr>
+    </table>
+    <p align="left">Rejected images:</p>
+    <table align="center">
+    <tr>
+        <th><a href="./assets/sd_dogs_pairing/rejections/1.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/rejections/1057.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1057.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1057.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/rejections/1106.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1106.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1106.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/rejections/1122.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1122.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1122.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/rejections/1125.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1125.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1125.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/rejections/1132.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1132.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1132.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_pairing/rejections/1145.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1145.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1145.jpg"> </a> </a></th>
+    </tr>
+    <tr>
+      <th><a href="./assets/sd_dogs_pairing/rejections/1172.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1172.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1172.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_pairing/rejections/1209.jpg"> <a href="./assets/sd_dogs_pairing/rejections/1209.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/1209.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_pairing/rejections/301.jpg"> <a href="./assets/sd_dogs_pairing/rejections/301.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/301.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_pairing/rejections/324.jpg"> <a href="./assets/sd_dogs_pairing/rejections/324.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/324.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_pairing/rejections/366.jpg"> <a href="./assets/sd_dogs_pairing/rejections/366.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/366.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_pairing/rejections/71.jpg"> <a href="./assets/sd_dogs_pairing/rejections/71.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/71.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_pairing/rejections/90.jpg"> <a href="./assets/sd_dogs_pairing/rejections/90.jpg"> <img  height="128" src="./assets/sd_dogs_pairing/rejections/90.jpg"> </a> </a></th>
+    </tr>
+    </table>
+
+    <h3 align="center">Horses</h3>
+    <table align="center">
+      <tr>
+        <th><p>Source Image</p></th>
+        <th style="padding-left: 20px;"><p>Inliers</p></th>
+        <th><p></p></th>
+        <th><p></p></th>
+        <th><p></p></th>
+        <th style="padding-left: 20px;"><p>Outliers</p></th>
+        <th><p></p></th>
+        <th><p></p></th>
+        <th><p></p></th>
+      </tr>
+      
+      <tr>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_horses_pairing/set1/source/0.jpg"> <a href="./assets/sd_horses_pairing/set1/source/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set1/source/0.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_horses_pairing/set1/positive/0.jpg"> <a href="./assets/sd_horses_pairing/set1/positive/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set1/positive/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set1/positive/1.jpg"> <a href="./assets/sd_horses_pairing/set1/positive/1.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set1/positive/1.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set1/positive/2.jpg"> <a href="./assets/sd_horses_pairing/set1/positive/2.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set1/positive/2.jpg"> </a> </a></th>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_horses_pairing/set1/positive/3.jpg"> <a href="./assets/sd_horses_pairing/set1/positive/3.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set1/positive/3.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_horses_pairing/set1/negative/0.jpg"> <a href="./assets/sd_horses_pairing/set1/negative/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set1/negative/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set1/negative/1.jpg"> <a href="./assets/sd_horses_pairing/set1/negative/1.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set1/negative/1.jpg"> </a> </a></th>
+      </tr>
+
+      <tr>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_horses_pairing/set2/source/0.jpg"> <a href="./assets/sd_horses_pairing/set2/source/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set2/source/0.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_horses_pairing/set2/positive/0.jpg"> <a href="./assets/sd_horses_pairing/set2/positive/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set2/positive/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set2/positive/1.jpg"> <a href="./assets/sd_horses_pairing/set2/positive/1.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set2/positive/1.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set2/positive/2.jpg"> <a href="./assets/sd_horses_pairing/set2/positive/2.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set2/positive/2.jpg"> </a> </a></th>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_horses_pairing/set2/positive/3.jpg"> <a href="./assets/sd_horses_pairing/set2/positive/3.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set2/positive/3.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_horses_pairing/set2/negative/0.jpg"> <a href="./assets/sd_horses_pairing/set2/negative/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set2/negative/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set2/negative/1.jpg"> <a href="./assets/sd_horses_pairing/set2/negative/1.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set2/negative/1.jpg"> </a> </a></th>
+      </tr>
+
+      
+      <tr>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_horses_pairing/set3/source/0.jpg"> <a href="./assets/sd_horses_pairing/set3/source/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set3/source/0.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_horses_pairing/set3/positive/0.jpg"> <a href="./assets/sd_horses_pairing/set3/positive/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set3/positive/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set3/positive/1.jpg"> <a href="./assets/sd_horses_pairing/set3/positive/1.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set3/positive/1.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set3/positive/2.jpg"> <a href="./assets/sd_horses_pairing/set3/positive/2.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set3/positive/2.jpg"> </a> </a></th>
+        <th style="padding-right: 20px; border-right: 2px dashed white;"><a href="./assets/sd_horses_pairing/set3/positive/3.jpg"> <a href="./assets/sd_horses_pairing/set3/positive/3.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set3/positive/3.jpg"> </a> </a></th>
+        <th style="padding-left: 20px;"><a href="./assets/sd_horses_pairing/set3/negative/0.jpg"> <a href="./assets/sd_horses_pairing/set3/negative/0.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set3/negative/0.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/set3/negative/1.jpg"> <a href="./assets/sd_horses_pairing/set3/negative/1.jpg"> <img  height="128" src="./assets/sd_horses_pairing/set3/negative/1.jpg"> </a> </a></th>
+      </tr>
+
+
+    </table>
+    <p align="left">Rejected images:</p>
+    <table align="center">
+    <tr>
+        <th><a href="./assets/sd_horses_pairing/rejections/10005.jpg"> <a href="./assets/sd_horses_pairing/rejections/10005.jpg"> <img  height="128" src="./assets/sd_horses_pairing/rejections/10005.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/rejections/1006.jpg"> <a href="./assets/sd_horses_pairing/rejections/1006.jpg"> <img  height="128" src="./assets/sd_horses_pairing/rejections/1006.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_horses_pairing/rejections/1057.jpg"> <a href="./assets/sd_horses_pairing/rejections/1057.jpg"> <img  height="128" src="./assets/sd_horses_pairing/rejections/1057.jpg"> </a> </a></th>
+              <th><a href="./assets/sd_horses_pairing/rejections/1083.jpg"> <a href="./assets/sd_horses_pairing/rejections/1083.jpg"> <img  height="128" src="./assets/sd_horses_pairing/rejections/1083.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_horses_pairing/rejections/111.jpg"> <a href="./assets/sd_horses_pairing/rejections/111.jpg"> <img  height="128" src="./assets/sd_horses_pairing/rejections/111.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_horses_pairing/rejections/115.jpg"> <a href="./assets/sd_horses_pairing/rejections/115.jpg"> <img  height="128" src="./assets/sd_horses_pairing/rejections/115.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_horses_pairing/rejections/1179.jpg"> <a href="./assets/sd_horses_pairing/rejections/1179.jpg"> <img  height="128" src="./assets/sd_horses_pairing/rejections/1179.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_horses_pairing/rejections/1248.jpg"> <a href="./assets/sd_horses_pairing/rejections/1248.jpg"> <img  height="128" src="./assets/sd_horses_pairing/rejections/1248.jpg"> </a> </a></th>
+    </tr>
+    </table>
+    <hr>
+
+    <h2 align="center" id="pairing">Pairing Ablation</h2>
+    <p align="left">We show results generated by SpliceNet with (i) training with dataset distillation, (ii) training without dataset distillation.
+      Evidently, the model manages to transfer semantic regions in a more coherent manner when trained with our distillation method.
+    </p>
+
+    <table align="center">
+    <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet w/ pairing</p></th>        
+        <th><p>SpliceNet w/o pairing</p></th>
+    </tr>
+    <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/12.jpg"> <a href="./assets/sd_dogs_ablations/textures/12.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/12.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/12.jpg"> <a href="./assets/sd_dogs_ablations/structures/12.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/12.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/12.jpg"> <a href="./assets/sd_dogs_ablations/ours/12.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/12.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_wo_pairing/12.jpg"> <a href="./assets/sd_dogs_ablations/ours_wo_pairing/12.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_wo_pairing/12.jpg"> </a> </a></th>
+    </tr>
+    <tr>
+      <th><p>Appearance</p></th>
+      <th><p>Structure</p></th>
+      <th><p>SpliceNet w/ pairing</p></th>        
+      <th><p>SpliceNet w/o pairing</p></th>
+    </tr>
+    <tr>
+      <th><a href="./assets/sd_dogs_ablations/textures/14.jpg"> <a href="./assets/sd_dogs_ablations/textures/14.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/14.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/structures/14.jpg"> <a href="./assets/sd_dogs_ablations/structures/14.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/14.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours/14.jpg"> <a href="./assets/sd_dogs_ablations/ours/14.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/14.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours_wo_pairing/14.jpg"> <a href="./assets/sd_dogs_ablations/ours_wo_pairing/14.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_wo_pairing/14.jpg"> </a> </a></th>
+    </tr>
+    <tr>
+      <th><p>Appearance</p></th>
+      <th><p>Structure</p></th>
+      <th><p>SpliceNet w/ pairing</p></th>        
+      <th><p>SpliceNet w/o pairing</p></th>
+    </tr>
+    <tr>
+      <th><a href="./assets/sd_dogs_ablations/textures/18.jpg"> <a href="./assets/sd_dogs_ablations/textures/18.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/18.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/structures/18.jpg"> <a href="./assets/sd_dogs_ablations/structures/18.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/18.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours/18.jpg"> <a href="./assets/sd_dogs_ablations/ours/18.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/18.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours_wo_pairing/18.jpg"> <a href="./assets/sd_dogs_ablations/ours_wo_pairing/18.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_wo_pairing/18.jpg"> </a> </a></th>
+    </tr>
+    <tr>
+      <th><p>Appearance</p></th>
+      <th><p>Structure</p></th>
+      <th><p>SpliceNet w/ pairing</p></th>        
+      <th><p>SpliceNet w/o pairing</p></th>
+    </tr>
+    <tr>
+      <th><a href="./assets/sd_dogs_ablations/textures/22.jpg"> <a href="./assets/sd_dogs_ablations/textures/22.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/22.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/structures/22.jpg"> <a href="./assets/sd_dogs_ablations/structures/22.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/22.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours/22.jpg"> <a href="./assets/sd_dogs_ablations/ours/22.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/22.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours_wo_pairing/22.jpg"> <a href="./assets/sd_dogs_ablations/ours_wo_pairing/22.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_wo_pairing/22.jpg"> </a> </a></th>
+    </tr>
+    <tr>
+      <th><p>Appearance</p></th>
+      <th><p>Structure</p></th>
+      <th><p>SpliceNet w/ pairing</p></th>        
+      <th><p>SpliceNet w/o pairing</p></th>
+    </tr>
+    <tr>
+      <th><a href="./assets/sd_dogs_ablations/textures/26.jpg"> <a href="./assets/sd_dogs_ablations/textures/26.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/26.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/structures/26.jpg"> <a href="./assets/sd_dogs_ablations/structures/26.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/26.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours/26.jpg"> <a href="./assets/sd_dogs_ablations/ours/26.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/26.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours_wo_pairing/26.jpg"> <a href="./assets/sd_dogs_ablations/ours_wo_pairing/26.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_wo_pairing/26.jpg"> </a> </a></th>
+    </tr>
+    <tr>
+      <th><p>Appearance</p></th>
+      <th><p>Structure</p></th>
+      <th><p>SpliceNet w/ pairing</p></th>        
+      <th><p>SpliceNet w/o pairing</p></th>
+    </tr>
+    <tr>
+      <th><a href="./assets/sd_dogs_ablations/textures/27.jpg"> <a href="./assets/sd_dogs_ablations/textures/27.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/27.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/structures/27.jpg"> <a href="./assets/sd_dogs_ablations/structures/27.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/27.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours/27.jpg"> <a href="./assets/sd_dogs_ablations/ours/27.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/27.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours_wo_pairing/27.jpg"> <a href="./assets/sd_dogs_ablations/ours_wo_pairing/27.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_wo_pairing/27.jpg"> </a> </a></th>
+    </tr>
+    <tr>
+      <th><p>Appearance</p></th>
+      <th><p>Structure</p></th>
+      <th><p>SpliceNet w/ pairing</p></th>        
+      <th><p>SpliceNet w/o pairing</p></th>
+    </tr>
+    <tr>
+      <th><a href="./assets/sd_dogs_ablations/textures/44.jpg"> <a href="./assets/sd_dogs_ablations/textures/44.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/44.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/structures/44.jpg"> <a href="./assets/sd_dogs_ablations/structures/44.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/44.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours/44.jpg"> <a href="./assets/sd_dogs_ablations/ours/44.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/44.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours_wo_pairing/44.jpg"> <a href="./assets/sd_dogs_ablations/ours_wo_pairing/44.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_wo_pairing/44.jpg"> </a> </a></th>
+    </tr>
+    <tr>
+      <th><p>Appearance</p></th>
+      <th><p>Structure</p></th>
+      <th><p>SpliceNet w/ pairing</p></th>        
+      <th><p>SpliceNet w/o pairing</p></th>
+    </tr>
+    <tr>
+      <th><a href="./assets/sd_dogs_ablations/textures/49.jpg"> <a href="./assets/sd_dogs_ablations/textures/49.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/49.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/structures/49.jpg"> <a href="./assets/sd_dogs_ablations/structures/49.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/49.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours/49.jpg"> <a href="./assets/sd_dogs_ablations/ours/49.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/49.jpg"> </a> </a></th>
+      <th><a href="./assets/sd_dogs_ablations/ours_wo_pairing/49.jpg"> <a href="./assets/sd_dogs_ablations/ours_wo_pairing/49.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_wo_pairing/49.jpg"> </a> </a></th>
+    </tr>
+    </table>
+    <hr>
+
+    <h2 align="center" id="cnn_baselines">CNN Baselines</h2>
+    <p align="left">We show results generated by SpliceNet with (i) recieving the [CLS] as input (ii) receiving the apearance image as input (i.e. CNN baseline).
+      Evidently, the model conditioned on the [CLS] token manages to transfer more complex texture (e.g. fur, different colors in different parts) than the CNN baseline.
+    </p>
+    <table align="center">
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/15.jpg"> <a href="./assets/sd_dogs_ablations/textures/15.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/15.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/15.jpg"> <a href="./assets/sd_dogs_ablations/structures/15.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/15.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/15.jpg"> <a href="./assets/sd_dogs_ablations/ours/15.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/15.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/15.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/15.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/15.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/16.jpg"> <a href="./assets/sd_dogs_ablations/textures/16.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/16.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/16.jpg"> <a href="./assets/sd_dogs_ablations/structures/16.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/16.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/16.jpg"> <a href="./assets/sd_dogs_ablations/ours/16.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/16.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/16.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/16.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/16.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/19.jpg"> <a href="./assets/sd_dogs_ablations/textures/19.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/19.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/19.jpg"> <a href="./assets/sd_dogs_ablations/structures/19.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/19.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/19.jpg"> <a href="./assets/sd_dogs_ablations/ours/19.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/19.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/19.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/19.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/19.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/25.jpg"> <a href="./assets/sd_dogs_ablations/textures/25.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/25.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/25.jpg"> <a href="./assets/sd_dogs_ablations/structures/25.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/25.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/25.jpg"> <a href="./assets/sd_dogs_ablations/ours/25.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/25.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/25.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/25.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/25.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/30.jpg"> <a href="./assets/sd_dogs_ablations/textures/30.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/30.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/30.jpg"> <a href="./assets/sd_dogs_ablations/structures/30.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/30.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/30.jpg"> <a href="./assets/sd_dogs_ablations/ours/30.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/30.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/30.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/30.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/30.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/36.jpg"> <a href="./assets/sd_dogs_ablations/textures/36.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/36.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/36.jpg"> <a href="./assets/sd_dogs_ablations/structures/36.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/36.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/36.jpg"> <a href="./assets/sd_dogs_ablations/ours/36.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/36.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/36.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/36.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/36.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/45.jpg"> <a href="./assets/sd_dogs_ablations/textures/45.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/45.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/45.jpg"> <a href="./assets/sd_dogs_ablations/structures/45.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/45.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/45.jpg"> <a href="./assets/sd_dogs_ablations/ours/45.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/45.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/45.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/45.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/45.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/49.jpg"> <a href="./assets/sd_dogs_ablations/textures/49.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/49.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/49.jpg"> <a href="./assets/sd_dogs_ablations/structures/49.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/49.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/49.jpg"> <a href="./assets/sd_dogs_ablations/ours/49.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/49.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/49.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/49.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/49.jpg"> </a> </a></th>
+      </tr>
+      <tr>
+        <th><p>Appearance</p></th>
+        <th><p>Structure</p></th>
+        <th><p>SpliceNet</p></th>        
+        <th><p>SpliceNet CNN Baseline</p></th>
+      </tr>
+      <tr>
+        <th><a href="./assets/sd_dogs_ablations/textures/50.jpg"> <a href="./assets/sd_dogs_ablations/textures/50.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/textures/50.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/structures/50.jpg"> <a href="./assets/sd_dogs_ablations/structures/50.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/structures/50.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours/50.jpg"> <a href="./assets/sd_dogs_ablations/ours/50.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours/50.jpg"> </a> </a></th>
+        <th><a href="./assets/sd_dogs_ablations/ours_cnn/50.jpg"> <a href="./assets/sd_dogs_ablations/ours_cnn/50.jpg"> <img  height="256" src="./assets/sd_dogs_ablations/ours_cnn/50.jpg"> </a> </a></th>
+      </tr>
+    </table>   
+
+  </div> 
+
+</body>
+
+</html>
